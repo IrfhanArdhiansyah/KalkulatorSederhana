@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kalkulator sederhana dengan operasi aritmatika dasar.">
+    <title>Kalkulator Sederhana</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page-shell">
+        <section class="calculator" aria-label="Kalkulator sederhana">
+            <div class="calculator__topbar">
+                <span class="brand-mark" aria-hidden="true">
+                          <span class="brand-mark__screen"></span>
+                          <span class="brand-mark__keys"></span>
+                </span>
+                <div>
+                    <p class="eyebrow">Simple calculator</p>
+                    <h1>Kalkulator</h1>
+                </div>
+                <span class="status-dot" aria-label="Siap digunakan"></span>
+            </div>
+
+            <div class="display" aria-live="polite">
+                <div class="display__expression" id="expression">&nbsp;</div>
+                <div class="display__value" id="display">0</div>
+            </div>
+
+            <div class="keypad">
+                <button class="key key--utility" type="button" data-action="clear">AC</button>
+                <button class="key key--utility" type="button" data-action="delete" aria-label="Hapus satu angka">DEL</button>
+                <button class="key key--operator" type="button" data-operator="%">%</button>
+                <button class="key key--operator" type="button" data-operator="/" aria-label="Bagi">&divide;</button>
+
+                <button class="key" type="button" data-number="7">7</button>
+                <button class="key" type="button" data-number="8">8</button>
+                <button class="key" type="button" data-number="9">9</button>
+                <button class="key key--operator" type="button" data-operator="*" aria-label="Kali">&times;</button>
+
+                <button class="key" type="button" data-number="4">4</button>
+                <button class="key" type="button" data-number="5">5</button>
+                <button class="key" type="button" data-number="6">6</button>
+                <button class="key key--operator" type="button" data-operator="-" aria-label="Kurang">&minus;</button>
+
+                <button class="key" type="button" data-number="1">1</button>
+                <button class="key" type="button" data-number="2">2</button>
+                <button class="key" type="button" data-number="3">3</button>
+                <button class="key key--operator" type="button" data-operator="+" aria-label="Tambah">+</button>
+
+                <button class="key key--wide" type="button" data-number="0">0</button>
+                <button class="key" type="button" data-action="decimal">.</button>
+                <button class="key key--equals" type="button" data-action="calculate" aria-label="Hasil">=</button>
+            </div>
+        </section>
+        <p class="hint">Gunakan tombol keyboard untuk menghitung lebih cepat</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
